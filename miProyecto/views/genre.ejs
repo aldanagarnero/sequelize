@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generos</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Generos</h1>
+    <p>
+      <% for(let i=0; i<datos.length; i++){ %>
+          <li class="titulos"><a href="./detail/<%= datos[i].id %>"><%= datos[i].genre %></a></li>
+      <% } %>
+    </p>
+  </body>
+</html>
